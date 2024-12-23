@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Facebook - Login Signup Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main bg-gray-200 min-h-screen flex items-center justify-center px-4">
+      <div
+        class="container flex flex-col md:flex-row items-center justify-center md:justify-around h-auto md:h-screen gap-6"
+      >
+        <!-- Left Container -->
+        <div class="left text-center md:text-left flex flex-col w-full md:w-[30rem]">
+          <h2 class="text-[48px] md:text-[58px] font-bold text-blue-600">facebook</h2>
+          <span class="text-[20px] md:text-[25px]">
+            Connect with friends and the world around you on Facebook
+          </span>
+        </div>
+
+        
+        <div class="right w-full sm:w-[22rem] md:w-[24rem] lg:w-[26rem]">
+          <div
+            class="box flex flex-col gap-3 bg-white p-5 rounded-lg shadow-lg"
+          >
+            <form action="/" method="post">
+              <div class="input-div">
+                <input
+                  type="text"
+                  name="loginId"
+                  class="p-3 border-[1px] placeholder:text-zinc-500 transition ease-in border-slate-300 w-full rounded-md outline-none focus:border-[1px] focus:border-sky-500"
+                  placeholder="Email Address or phone number"
+                  required
+                />
+              </div>
+              <div class="password-div mt-3">
+                <input
+                  type="password"
+                  name="loginPaws"
+                  class="p-3 border-[1px] placeholder:text-zinc-500 transition ease-in border-slate-300 w-full focus:border-[1px] focus:border-sky-400 rounded-md outline-none"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+              <div class="login-button my-3">
+                <button
+                  type="submit"
+                  class="p-3 rounded-md transition ease-in font-bold bg-blue-500 w-full text-white text-lg hover:bg-blue-600"
+                >
+                  Login
+                </button>
+              </div>
+              <span class="block text-center text-sm text-blue-600">
+                <a href="#" class="hover:underline">Forgot password?</a>
+              </span>
+              <hr class="mt-3" />
+              <div class="login-button text-center mt-4">
+                <button
+                  type="button"
+                  class="p-3 rounded-md transition ease-in hover:bg-green-700 font-bold bg-green-600 w-full md:w-44 text-white text-sm"
+                >
+                  Create new account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
